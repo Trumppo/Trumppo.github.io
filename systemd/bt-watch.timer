@@ -1,0 +1,9 @@
+[Unit]
+Description=Start bt-watch on boot
+
+[Timer]
+OnBootSec=30
+Unit=bt-watch.service
+
+[Install]
+WantedBy=timers.target

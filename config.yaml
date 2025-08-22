@@ -1,0 +1,7 @@
+scan_interval: 1.0
+grace_seconds: 10
+weak_signal_grace_seconds: 20
+min_rssi_dBm: -100
+exclude_mac_prefixes: []
+adapter: hci0
+log_path: ./bt_watch.log

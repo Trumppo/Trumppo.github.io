@@ -1,0 +1,13 @@
+[Unit]
+Description=Bluetooth device watcher
+After=bluetooth.target
+Requires=bluetooth.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/env python3 /opt/bt_watch/bt_watch.py --config /opt/bt_watch/config.yaml
+Restart=on-failure
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
